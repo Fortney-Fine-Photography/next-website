@@ -9,7 +9,7 @@ const Grid = ({ col1, col2, col3 }) => {
     return (
         <div
             className="flex w-full h-full flex-wrap overflow-x-hidden overflow-y-auto"
-            style={{ maxHeight: "calc(100vh - 323px)" }}
+            style={{ maxHeight: "calc(100vh - 311px)" }}
         >
             <div className={`${styles["gallery-column"]} px-1.5`}>
                 {col1.map((image) => {

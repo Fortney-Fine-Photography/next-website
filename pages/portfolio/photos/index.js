@@ -315,7 +315,7 @@ const Photos = () => {
     // });
 
     return (
-        <div className="flex flex-auto w-11/12 lg:w-3/4 flex-col items-center justify-start mt-3 mb-6">
+        <div className="flex flex-auto w-11/12 lg:w-3/4 flex-col items-center justify-start mb-6">
             <Head>
                 <title>
                     Fortney Fine Photography - Portfolio | High Quality Real
