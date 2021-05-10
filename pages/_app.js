@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }) {
                     loop
                     muted
                     playsInline
-                    poster="/portfolio/photos-thumbnail.jpg"
+                    // poster="/portfolio/photos-thumbnail.jpg"
                 >
                     <source
                         src="/videos/background-video-xsmall.mp4"
