@@ -104,7 +104,7 @@ const Navbar = () => {
                         (703)-201-7026
                     </a>
                 </Link>
-                <Link href="/book">
+                <Link href="/bookings">
                     <a
                         className={`border-2 py-2 px-2 ${
                             pathname === "/" ? "border-white" : "border-black"
@@ -173,7 +173,7 @@ const Navbar = () => {
                                 (703)-201-7026
                             </a>
                         </Link>
-                        <Link href="/book">
+                        <Link href="/bookings">
                             <a
                                 onClick={() => setMenuOpen(false)}
                                 className="border-black border-2 py-2 px-2"

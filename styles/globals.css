@@ -75,3 +75,18 @@ body {
     width: 0;
     height: 0;
 }
+
+.fade-light-enter {
+    opacity: 0;
+}
+.fade-light-enter-active {
+    opacity: 0.25;
+    transition: all 150ms;
+}
+.fade-light-exit {
+    opacity: 0.25;
+}
+.fade-light-exit-active {
+    opacity: 0;
+    transition: all 150ms;
+}
