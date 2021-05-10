@@ -1,7 +1,6 @@
 import Head from "next/head";
-import TypeLink from "../components/portfolio/TypeLink";
 
-const Portfolio = () => {
+const Videos = () => {
     return (
         <div className="flex flex-auto w-11/12 lg:w-3/4 flex-col mt-3 mb-6">
             <Head>
@@ -15,24 +14,9 @@ const Portfolio = () => {
                     property="og:title"
                 />
             </Head>
-            <TypeLink
-                href="360"
-                title="360 Tours"
-                imgsrc="/portfolio/photos-thumbnail.jpg"
-            />
-            <TypeLink
-                href="photos"
-                title="Photos"
-                imgsrc="/portfolio/photos-thumbnail.jpg"
-                isMiddle={true}
-            />
-            <TypeLink
-                href="videos"
-                title="Videos"
-                imgsrc="/portfolio/photos-thumbnail.jpg"
-            />
+            Videos
         </div>
     );
 };
 
-export default Portfolio;
+export default Videos;

@@ -10,7 +10,7 @@ const Navbar = () => {
 
     return (
         <div
-            className="flex items-center w-11/12 lg:w-3/4 mt-6"
+            className="flex items-center w-11/12 lg:w-3/4 mt-6 animate-fade-in-up"
             style={{ height: "130px" }}
         >
             <div
@@ -25,7 +25,7 @@ const Navbar = () => {
                         } ${
                             pathname === "/" ? "" : `${styles["black-navLink"]}`
                         } ${
-                            pathname === "/portfolio"
+                            pathname.includes("/portfolio")
                                 ? `${styles["active"]}`
                                 : ""
                         }`}

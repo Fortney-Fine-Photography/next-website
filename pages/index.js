@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
     return (
-        <div className="flex flex-auto justify-center w-11/12 lg:w-3/4 flex-col">
+        <div className="flex flex-auto justify-center w-11/12 lg:w-3/4 flex-col animate-fade-in-up">
             <Head>
                 <title>
                     Fortney Fine Photography | High Quality Real Estate
