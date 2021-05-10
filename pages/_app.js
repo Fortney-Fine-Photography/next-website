@@ -26,6 +26,17 @@ function MyApp({ Component, pageProps }) {
                         gtag('js', new Date()); gtag('config', 'G-3JX2NW74XK');`,
                     }}
                 />
+                <link rel="icon" href="/favicon.ico" />
+
+                <meta
+                    content="Highest quality photography, video, and 360 virtual tours for your real estate property in Washington DC, Maryland, or Virginia. With our 24 hour turn around times and unbranded links, you can have your property listed on the MLS, embedded on your website, and under contact as soon as possible!"
+                    property="og:description"
+                />
+                <meta
+                    name="description"
+                    content="Highest quality photography, video, and 360 virtual tours for your real estate property in Washington DC, Maryland, or Virginia. With our 24 hour turn around times and unbranded links, you can have your property listed on the MLS, embedded on your website, and under contact as soon as possible!"
+                    name="description"
+                />
             </Head>
             {pathname === "/" && (
                 <video
@@ -34,8 +45,13 @@ function MyApp({ Component, pageProps }) {
                     loop
                     muted
                     playsInline
-                    src="/videos/background-video-small.webm"
-                />
+                    poster="/portfolio/photos-thumbnail.jpg"
+                >
+                    <source
+                        src="/videos/background-video-xsmall.mp4"
+                        type="video/mp4"
+                    ></source>
+                </video>
             )}
             <Navbar />
             <Component {...pageProps} />

@@ -14,7 +14,10 @@ const TypeLink = ({ href, title, imgsrc, isMiddle }) => {
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={() => setIsHovering(false)}
             >
-                <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl py-5 font-archi-bold text-white z-10 pl-3">
+                <h1
+                    className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl py-5 font-archi-bold text-white pl-3"
+                    style={{ zIndex: 1 }}
+                >
                     {title}
                 </h1>
                 {href === "videos" && (
@@ -24,7 +27,7 @@ const TypeLink = ({ href, title, imgsrc, isMiddle }) => {
                         muted
                         playsInline
                         src="/portfolio/videos-thumbnail.mp4"
-                        className="w-full h-full object-cover object-center absolute"
+                        className="rounded-lg w-full h-full object-cover object-center absolute"
                     />
                 )}
                 {href === "360" && (
@@ -34,7 +37,7 @@ const TypeLink = ({ href, title, imgsrc, isMiddle }) => {
                         muted
                         playsInline
                         src="/portfolio/360-thumbnail.mp4"
-                        className="w-full h-full object-cover object-center absolute"
+                        className="rounded-lg w-full h-full object-cover object-center absolute"
                     />
                 )}
                 {href === "photos" && (
