@@ -14,6 +14,19 @@ function MyApp({ Component, pageProps }) {
             }`}
         >
             <Head>
+                <link
+                    rel="preload"
+                    href="/fonts/ArchitypeRenner-Bold.otf"
+                    as="font"
+                    type="font/opentype"
+                />
+                <link
+                    rel="preload"
+                    href="/fonts/ArchitypeRenner-Regular.otf"
+                    as="font"
+                    type="font/opentype"
+                />
+
                 <script
                     async
                     src="https://www.googletagmanager.com/gtag/js?id=G-3JX2NW74XK"

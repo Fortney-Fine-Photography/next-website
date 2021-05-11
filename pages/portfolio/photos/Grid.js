@@ -1,4 +1,7 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import {
+    LazyLoadImage,
+    trackWindowScroll,
+} from "react-lazy-load-image-component";
 import Gallery from "react-grid-gallery";
 import image from "next/image";
 import LazyLoad from "react-lazyload";
@@ -6,7 +9,7 @@ import LazyLoad from "react-lazyload";
 import styles from "../../../styles/Portfolio/photos.module.css";
 import ScrollAnimation from "react-animate-on-scroll";
 
-const Grid = () => {
+const Grid = ({ scrollPosition }) => {
     const col1 = [
         {
             src: "1.jpg",
@@ -321,7 +324,7 @@ const Grid = () => {
                                 href={`/portfolio/photos/${image.src}`}
                                 target="_blank"
                             >
-                                <LazyLoad offset={100} once>
+                                <LazyLoad height={250} once>
                                     <img
                                         src={`/portfolio/photos/${image.src}`}
                                         className="transition-all duration-200"
@@ -343,10 +346,10 @@ const Grid = () => {
                                 href={`/portfolio/photos/${image.src}`}
                                 target="_blank"
                             >
-                                <LazyLoad offset={100} once>
+                                <LazyLoad height={250} once>
                                     <img
                                         src={`/portfolio/photos/${image.src}`}
-                                        className="transition-all duration-200 animate-fade-in-up"
+                                        className="transition-all duration-200"
                                     />
                                 </LazyLoad>
                             </a>
@@ -365,7 +368,7 @@ const Grid = () => {
                                 href={`/portfolio/photos/${image.src}`}
                                 target="_blank"
                             >
-                                <LazyLoad offset={100} once>
+                                <LazyLoad height={250} once>
                                     <img
                                         src={`/portfolio/photos/${image.src}`}
                                         className="transition-all duration-200 animate-fade-in-up"
@@ -380,4 +383,4 @@ const Grid = () => {
     );
 };
 
-export default Grid;
+export default trackWindowScroll(Grid);
