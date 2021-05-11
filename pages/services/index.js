@@ -21,19 +21,19 @@ const Services = () => {
                 className="flex flex-col flex-auto"
                 style={{ height: "calc(100vh - 154px)" }}
             >
-                <div className="flex flex-auto items-center">
-                    <div className="w-1/2 flex justify-centyer items-start flex-col">
-                        <h1 className="font-archi-bold text-4xl">
+                <div className="flex flex-auto items-center justify-center md:flex-row flex-col">
+                    <div className="w-full md:w-1/2 flex justify-centyer items-start flex-col">
+                        <h1 className="font-archi-bold text-3xl md:text-4xl">
                             Unmatched Quality
                         </h1>
-                        <h2 className="w-10/12 font-archi-regular text-2xl leading-tight">
+                        <h2 className="w-full text-xl md:w-10/12 font-archi-regular md:text-2xl leading-tight">
                             We use only the most modern equipment, in order to
                             deliver a product whose quality is unmatched. Our
                             custom photography processes are guaranteed to
                             produce higher quality
                         </h2>
                     </div>
-                    <div className="w-1/2 flex justify-center items-center">
+                    <div className="w-full sm:w-10/12 md:w-1/2 flex justify-center items-center">
                         <img
                             className="min-h-0 object-cover w-full h-full 2xl:w-10/12 2xl:h-10/12"
                             src="/assets/sonya7iii-small.png"
@@ -66,18 +66,21 @@ const Services = () => {
                 className="flex flex-col flex-auto"
                 style={{ height: "calc(100vh - 0px)" }}
             >
-                <div className="flex flex-auto items-center" id="section2">
-                    <div className="w-1/2 flex justify-centyer items-start flex-col">
-                        <h1 className="font-archi-bold text-4xl">
+                <div
+                    className="flex flex-auto items-center justify-center md:flex-row flex-col"
+                    id="section2"
+                >
+                    <div className="w-full md:w-1/2 flex justify-centyer items-start flex-col">
+                        <h1 className="font-archi-bold text-3xl md:text-4xl">
                             Unmatched Quality
                         </h1>
-                        <h2 className="w-10/12 font-archi-regular text-2xl leading-tight">
+                        <h2 className="w-full text-xl md:w-10/12 font-archi-regular md:text-2xl leading-tight">
                             We use only the most modern equipment, in order to
                             deliver a product whose quality is unmatched. Our
                             custom photography processes are guaranteed to
                         </h2>
                     </div>
-                    <div className="w-1/2 flex justify-center items-center">
+                    <div className="w-full sm:w-10/12 md:w-1/2 flex justify-center items-center">
                         <img
                             className="min-h-0 object-cover w-full h-full 2xl:w-10/12 2xl:h-10/12"
                             src="/assets/sonya7iii-small.png"
@@ -110,18 +113,21 @@ const Services = () => {
                 className="flex flex-col flex-auto"
                 style={{ height: "calc(100vh - 0px)" }}
             >
-                <div className="flex flex-auto items-center" id="section3">
-                    <div className="w-1/2 flex justify-centyer items-start flex-col">
-                        <h1 className="font-archi-bold text-4xl">
+                <div
+                    className="flex flex-auto items-center justify-center md:flex-row flex-col"
+                    id="section3"
+                >
+                    <div className="w-full md:w-1/2 flex justify-centyer items-start flex-col">
+                        <h1 className="font-archi-bold text-3xl md:text-4xl">
                             Unmatched Quality
                         </h1>
-                        <h2 className="w-10/12 font-archi-regular text-2xl leading-tight">
+                        <h2 className="w-full text-xl md:w-10/12 font-archi-regular md:text-2xl leading-tight">
                             We use only the most modern equipment, in order to
                             deliver a product whose quality is unmatched. Our
                             custom photography processes are guaranteed to
                         </h2>
                     </div>
-                    <div className="w-1/2 flex justify-center items-center">
+                    <div className="w-full sm:w-10/12 md:w-1/2 flex justify-center items-center">
                         <img
                             className="min-h-0 object-cover w-full h-full 2xl:w-10/12 2xl:h-10/12"
                             src="/assets/sonya7iii-small.png"
